@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "Full_setup_tests_todomvc"
+version = "0.1.0"
+description = "Web UI tests for TodoMvc on Python + Pytest + Selene + Allure Reports"
+authors = ["Volodymyr Gryadushkin <vgryadushkin@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+selene = {version = "^2.0.0-alpha.30", allow-prereleases = true}
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-xdist = "^1.31.0"
+allure-pytest = "^2.8.11"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
